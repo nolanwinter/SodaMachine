@@ -1,1 +1,1 @@
-blah
+local text1 = display.newText( "Hello World", 100, 100, "Arial", 60 )
