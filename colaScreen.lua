@@ -7,8 +7,9 @@ function t.open()
   local cola = display.newImage(group, "Images/ColaScreen.jpg" )
   cola.x = 512; cola.y = 384
   cola.width = 1270; cola.height = 768
+  --sets a back button and assigns it to go back to the main screen
   local backButton = display.newRect( group, 235, 190, 250, 100 )
-  backButton:setFillColor( 0, 0, 0.6, 0.2 )
+  backButton:setFillColor( 0, 0, 0.6, 0.01 )
   function backPress()
     mainScreen.open()
     group:removeSelf()

@@ -9,7 +9,7 @@ function t.open()
   flavors.width = 1270; flavors.height = 768
   --makes a button over the rootbeer circle and gives it an event listener
   local rootbeerButton = display.newRect( group, 450, 575, 240, 255 )
-  rootbeerButton:setFillColor( 0, 0, 0.6, 0.2 )
+  rootbeerButton:setFillColor( 0, 0, 0.6, 0.01 )
   function rootbeerPress()
     rootbeerScreen.open()
     group:removeSelf()
@@ -17,7 +17,7 @@ function t.open()
   rootbeerButton:addEventListener( "tap", rootbeerPress )
    --makes a button over the cola circle and gives it an event listener
   local colaButton = display.newRect( group, 470, 295, 240, 255 )
-  colaButton:setFillColor( 0, 0, 0.6, 0.2 )
+  colaButton:setFillColor( 0, 0, 0.6, 0.01 )
   function colaPress()
     colaScreen.open()
     group:removeSelf()
