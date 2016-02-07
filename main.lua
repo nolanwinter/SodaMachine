@@ -4,4 +4,7 @@ colaScreen = require "colaScreen"
 fruityScreen = require "fruityScreen"
 dietScreen = require "dietScreen"
 waterScreen = require "waterScreen"
+sanitizingScreen = require "sanitizingScreen"
+fillingScreen = require "fillingScreen"
+sealingScreen = require "sealingScreen"
 mainScreen.open()

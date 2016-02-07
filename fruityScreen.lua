@@ -15,5 +15,12 @@ function t.open()
     group:removeSelf()
   end
   backButton:addEventListener( "tap", backPress )
+  local grapeButton = display.newRect( group, 835, 450, 265, 285 )
+  grapeButton:setFillColor( 0, 0, 0.6, 0.01 )
+  function grapePress()
+    sanitizingScreen.open()
+    group:removeSelf()
+  end
+  grapeButton:addEventListener( "tap", grapePress )
 end
 return t
