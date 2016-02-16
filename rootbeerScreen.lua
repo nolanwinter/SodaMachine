@@ -15,5 +15,19 @@ function t.open()
     group:removeSelf()
   end
   backButton:addEventListener( "tap", backPress )
+  local rootbeerButton = display.newRect( group, 300, 430, 240, 255 )
+  rootbeerButton:setFillColor( 0, 0, 0.6, 0.01 )
+  function rootbeerPress()
+    sanitizingScreen.open()
+    group:removeSelf()
+  end
+  rootbeerButton:addEventListener( "tap", rootbeerPress )
+  local vanillaButton = display.newRect( group, 625, 430, 240, 255 )
+  vanillaButton:setFillColor( 0, 0, 0.6, 0.01 )
+  function vanillaPress()
+    sanitizingScreen.open()
+    group:removeSelf()
+  end
+  vanillaButton:addEventListener( "tap", vanillaPress )
 end
 return t

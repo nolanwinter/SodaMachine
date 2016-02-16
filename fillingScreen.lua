@@ -11,6 +11,6 @@ function t.open()
     sealingScreen.open()
     group:removeSelf()
   end
-  local timer1 = timer.performWithDelay( 1500, nextStep )
+  local timer1 = timer.performWithDelay( 1000, nextStep )
 end
 return t
